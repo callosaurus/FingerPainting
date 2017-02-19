@@ -26,7 +26,7 @@
     self = [super initWithCoder:coder];
     if (self) {
         self.path = [UIBezierPath new];
-        self.drawWidth = 1.0;
+        self.drawWidth = 14.0;
         self.linesDrawn = [NSMutableArray new];
 
     }
@@ -40,7 +40,7 @@
     //draw "old" lines in linesDrawn
     for (Line *lines in self.linesDrawn) {
         [lines.lineColor setStroke];
-        [lines setLineWidth:1.0];
+        [lines setLineWidth:14.0];
         [lines.linePath stroke];
     }
     
