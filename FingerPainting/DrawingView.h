@@ -13,7 +13,7 @@
 @property (nonatomic, strong) UIBezierPath *path;
 @property (nonatomic) UIColor *drawingColor;
 @property (nonatomic) CGFloat drawWidth;
-@property (nonatomic) NSMutableArray *pathsDrawn;
+@property (nonatomic) NSMutableArray *linesDrawn;
 
 
 @end

@@ -22,6 +22,7 @@
     
     self.drawView.userInteractionEnabled = YES;
     self.drawView.drawWidth = 1.0;
+    self.drawView.drawingColor = [UIColor blackColor];
 }
 
 
