@@ -32,6 +32,9 @@
 - (IBAction)undoLastLine:(UIButton *)sender {
     [self.drawView removeLastLine];
 }
+- (IBAction)eraserMode:(UIButton *)sender {
+    self.drawView.drawingColor = [UIColor whiteColor];
+}
 - (IBAction)blackButton:(id)sender {
     self.drawView.drawingColor = [UIColor blackColor];
 }
