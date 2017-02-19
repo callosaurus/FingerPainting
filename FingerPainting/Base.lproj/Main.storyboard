@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="DrawingView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="syU-QT-IGt">
+                                <rect key="frame" x="167" y="607" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Drd-s8-yxX"/>
+                                    <constraint firstAttribute="height" constant="40" id="FEf-pi-NRQ"/>
+                                </constraints>
+                                <state key="normal" title="B" image="black circle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxu-5J-wDi">
+                                <rect key="frame" x="221" y="552" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LEb-G4-8Dg"/>
+                                    <constraint firstAttribute="width" constant="40" id="hb5-5M-cMI"/>
+                                </constraints>
+                                <state key="normal" title="B" image="black circle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg9-n6-RcB">
+                                <rect key="frame" x="112" y="552" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="SEI-UH-1b2"/>
+                                    <constraint firstAttribute="height" constant="40" id="TpY-TH-8f3"/>
+                                </constraints>
+                                <color key="tintColor" red="0.81314986137756684" green="0.63365423258890996" blue="0.89151817560195923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="B" image="black circle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Iv-Xk-smQ">
+                                <rect key="frame" x="167" y="552" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="B2q-Z1-twN"/>
+                                    <constraint firstAttribute="width" constant="40" id="Qzf-ij-4NW"/>
+                                </constraints>
+                                <state key="normal" title="B" image="black circle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEU-Ac-nTv">
+                                <rect key="frame" x="112" y="607" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="R3J-bG-AYY"/>
+                                    <constraint firstAttribute="height" constant="40" id="eQS-9v-Gen"/>
+                                </constraints>
+                                <state key="normal" title="B" image="black circle"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyM-2m-XL9">
+                                <rect key="frame" x="221" y="607" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FAl-XN-5K9"/>
+                                    <constraint firstAttribute="width" constant="40" id="cZu-Gt-NKn"/>
+                                </constraints>
+                                <state key="normal" title="B" image="black circle"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lyM-2m-XL9" firstAttribute="leading" secondItem="syU-QT-IGt" secondAttribute="trailing" constant="14" id="20v-mo-Vu2"/>
+                            <constraint firstItem="sEU-Ac-nTv" firstAttribute="top" secondItem="Zg9-n6-RcB" secondAttribute="bottom" constant="15" id="9QU-DK-Bsa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sEU-Ac-nTv" secondAttribute="bottom" constant="20" id="G0q-OY-K4Q"/>
+                            <constraint firstItem="1Iv-Xk-smQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K5X-9v-O41"/>
+                            <constraint firstItem="lyM-2m-XL9" firstAttribute="top" secondItem="oxu-5J-wDi" secondAttribute="bottom" constant="15" id="KBa-pG-9mV"/>
+                            <constraint firstItem="syU-QT-IGt" firstAttribute="top" secondItem="1Iv-Xk-smQ" secondAttribute="bottom" constant="15" id="UDf-Z4-sHU"/>
+                            <constraint firstItem="1Iv-Xk-smQ" firstAttribute="leading" secondItem="Zg9-n6-RcB" secondAttribute="trailing" constant="15" id="XoM-D4-J2X"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="syU-QT-IGt" secondAttribute="bottom" constant="20" id="ZV0-di-4MW"/>
+                            <constraint firstItem="oxu-5J-wDi" firstAttribute="leading" secondItem="1Iv-Xk-smQ" secondAttribute="trailing" constant="14" id="bNT-TD-BHm"/>
+                            <constraint firstItem="syU-QT-IGt" firstAttribute="leading" secondItem="sEU-Ac-nTv" secondAttribute="trailing" constant="15" id="iiX-ZD-9kR"/>
+                            <constraint firstItem="syU-QT-IGt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oHN-Az-9kV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lyM-2m-XL9" secondAttribute="bottom" constant="20" id="xlB-0h-iyl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="black circle" width="128" height="128"/>
+    </resources>
+</document>
