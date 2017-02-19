@@ -11,7 +11,7 @@
 @interface DrawingView : UIView
 
 @property (nonatomic, strong) UIBezierPath *path;
-@property (nonatomic, strong) UIColor *drawingColor;
+@property (nonatomic) UIColor *drawingColor;
 @property (nonatomic) CGFloat drawWidth;
 @property (nonatomic) NSMutableArray *pathsDrawn;
 

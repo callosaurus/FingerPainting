@@ -10,23 +10,22 @@
 
 @implementation DrawingView
 
-//- (instancetype)init:(CGRect)frame
-//{
-//    self = [super initWithFrame:frame];
-//    if (self) {
-//        self.path = [UIBezierPath new];
-//        self.pathsDrawn = [NSMutableArray new];
-//
-//    }
-//    return self;
-//}
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.pathsDrawn = [NSMutableArray new];
+        self.drawWidth = 1.0;
+        
+    }
+    return self;
+}
 
 -(instancetype)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
     if (self) {
         self.path = [UIBezierPath new];
-        self.drawingColor = [UIColor redColor];
         self.drawWidth = 1.0;
 
     }
