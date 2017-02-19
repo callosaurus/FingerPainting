@@ -15,5 +15,6 @@
 @property (nonatomic) CGFloat drawWidth;
 @property (nonatomic) NSMutableArray *linesDrawn;
 
+-(void)removeLastLine;
 
 @end

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -138,6 +139,27 @@
                                 <rect key="frame" x="0.0" y="40" width="375" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" alpha="0.34999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHR-Jv-w8O">
+                                <rect key="frame" x="16" y="579" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="FGA-TM-kyc"/>
+                                    <constraint firstAttribute="height" constant="68" id="yGI-4P-zHX"/>
+                                </constraints>
+                                <state key="normal" title="Eraser">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSn-eO-hnd">
+                                <rect key="frame" x="287" y="579" width="69" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="UL9-id-NEG"/>
+                                    <constraint firstAttribute="width" constant="69" id="jBt-23-uNI"/>
+                                </constraints>
+                                <state key="normal" title="Undo"/>
+                                <connections>
+                                    <action selector="undoLastLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eML-BQ-I2u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -150,6 +172,8 @@
                             <constraint firstItem="XiS-Zs-Ci3" firstAttribute="leading" secondItem="9Y6-GD-kxk" secondAttribute="trailing" constant="8" id="G8b-xC-b1F"/>
                             <constraint firstAttribute="trailing" secondItem="EN4-cC-5fv" secondAttribute="trailing" id="IQH-54-m0i"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vbX-1l-HC8" secondAttribute="bottom" constant="20" id="NlX-F4-FSP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZSn-eO-hnd" secondAttribute="bottom" constant="19" id="PWp-bE-Lnx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SHR-Jv-w8O" secondAttribute="bottom" constant="20" id="SFR-p6-U17"/>
                             <constraint firstItem="vbX-1l-HC8" firstAttribute="leading" secondItem="fb0-eV-Dgs" secondAttribute="trailing" constant="8" id="TAv-Nu-Hgg"/>
                             <constraint firstItem="EN4-cC-5fv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="XHU-K4-Dhh"/>
                             <constraint firstItem="36t-zM-uaX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XPw-Vl-mIW"/>
@@ -158,10 +182,12 @@
                             <constraint firstItem="cBA-VZ-yWk" firstAttribute="top" secondItem="SSw-Hn-Zdv" secondAttribute="bottom" constant="8" id="aZN-f4-neJ"/>
                             <constraint firstItem="wau-cN-RV1" firstAttribute="leading" secondItem="XiS-Zs-Ci3" secondAttribute="trailing" constant="8" id="bC1-2K-n7V"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fEe-rK-qml" secondAttribute="bottom" constant="20" id="cnr-2k-2po"/>
+                            <constraint firstItem="SHR-Jv-w8O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="f5R-FT-aN3"/>
                             <constraint firstItem="fb0-eV-Dgs" firstAttribute="leading" secondItem="36t-zM-uaX" secondAttribute="trailing" constant="8" id="hax-jp-mI7"/>
                             <constraint firstItem="EN4-cC-5fv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jYB-ii-vqX"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fb0-eV-Dgs" secondAttribute="bottom" constant="20" id="kJ8-nE-tYw"/>
                             <constraint firstItem="SSw-Hn-Zdv" firstAttribute="leading" secondItem="SFL-1t-Tpo" secondAttribute="trailing" constant="8" id="nxC-Ar-Rec"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZSn-eO-hnd" secondAttribute="trailing" constant="3" id="owQ-VS-Iwv"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cBA-VZ-yWk" secondAttribute="bottom" constant="20" id="qzl-L5-NOi"/>
                             <constraint firstItem="EN4-cC-5fv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xPu-kZ-ZLV"/>
                             <constraint firstItem="9Y6-GD-kxk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xeR-dK-zyE"/>

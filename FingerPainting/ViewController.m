@@ -21,7 +21,6 @@
     [super viewDidLoad];
     
     self.drawView.userInteractionEnabled = YES;
-    self.drawView.drawWidth = 1.0;
     self.drawView.drawingColor = [UIColor blackColor];
 }
 
@@ -29,6 +28,9 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)undoLastLine:(UIButton *)sender {
+    [self.drawView removeLastLine];
 }
 - (IBAction)blackButton:(id)sender {
     self.drawView.drawingColor = [UIColor blackColor];

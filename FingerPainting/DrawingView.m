@@ -91,4 +91,10 @@
 
 }
 
+-(void)removeLastLine
+{
+    [self.linesDrawn removeLastObject];
+    [self setNeedsDisplay];
+}
+
 @end
